@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- swiper javascript library link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 2.5rem;
+            padding-bottom: 0;
+        }
+
+        .heading h1 {
+            text-transform: uppercase;
+            animation: about 1.5s ease-in-out forwards;
+        }
+
+        .about .image {
+            width: 100vw;
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 53rem;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            animation: about 1.5s ease-in-out forwards;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .about .content {
+            flex: 1 1 35rem;
+            padding-right: 3rem;
+            animation: about 1.5s ease-in-out forwards;
+            text-align: center;
+        }
+
+        .about .content h3 {
+            font-size: 2.5rem;
+            padding-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .about .content p {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            line-height: 2;
+            color: var(--light-black);
+        }
+
+        .about .content .icons-container {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about .content .icons-container .icons {
+            background: var(--light-bg);
+            padding: 2rem;
+            transition: .3s linear;
+        }
+
+        .about .content .icons-container .icons i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .about .content .icons-container .icons span {
+            font-size: 1.5rem;
+            display: block;
+        }
+
+        .about .content .icons-container .icons:hover {
+            background-color: var(--black);
+            color: var(--white);
+            transform: scale(1.075);
+        }
+
+        @keyframes about {
+            0% {
+                transform: scale(0.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+
+        .reviews {
+            background: var(--light-bg);
+        }
+
+        .reviews .reviews-slider
+        {
+            padding: 3rem 10rem;
+        }
+
+        .reviews .slide {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: var(--border);
+            background: var(--white);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+        .reviews .slide .stars
+        {
+            padding-bottom: 1.5rem;
+        }
+        .reviews .slide .stars i {
+            color: var(--main-color);
+            font-size: 1.8rem;
+        }
+
+        .reviews .slide p {
+            font-size: 1.5rem;
+            color: var(--light-black);
+            line-height: 2;
+            padding: 1rem 0;
+        }
+
+        .reviews .slide h3 {
+            font-size: 2rem;
+            color: var(--black);
+            padding-bottom: 1rem;
+        }
+
+        .reviews .slide span {
+            font-size: 1.5rem;
+            color: var(--main-color);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <a href="./home.html" class="logo">Travelory</a>
+        <nav class="navbar">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./package.html">Packages</a>
+            <a href="book.html">Book your tickets!</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <div class="heading">
+        <h1>about us</h1>
+    </div>
+
+
+
+    <!-- about section -->
+    <section class="about">
+        <div class="image">
+            <img src="./css/images/about.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi, fugiat officia ab officiis, a
+                eius accusamus, deleniti earum reiciendis voluptatem? Aspernatur, nesciunt! Porro quo doloribus
+                necessitatibus! Adipisci, recusandae laborum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel quisquam ad ducimus amet
+                obcaecati, eos error dignissimos nisi a?</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-map"></i>
+                    <span>top destinations</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <span>affordable price</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 guide service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- reviews section -->
+    <section class="reviews">
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti maiores quis delectus
+                        omnis nesciunt sunt assumenda odit adipisci quo! Ullam error totam reprehenderit repudiandae
+                        harum. Unde, ex. Suscipit, eum, sapiente aspernatur nam hic repudiandae pariatur nihil saepe
+                        molestias odio voluptas, quod accusamus.</p>
+                    <h3>John </h3>
+                    <span>traveller</span>
+                </div>
+
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti maiores quis delectus
+                        omnis nesciunt sunt assumenda odit adipisci quo! Ullam error totam reprehenderit repudiandae
+                        harum. Unde, ex. Suscipit, eum, sapiente aspernatur nam hic repudiandae pariatur nihil saepe
+                        molestias odio voluptas, quod accusamus.</p>
+                    <h3>Henry </h3>
+                    <span>engineer</span>
+                </div>
+
+
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti maiores quis delectus
+                        omnis nesciunt sunt assumenda odit adipisci quo! Ullam error totam reprehenderit repudiandae
+                        harum. Unde, ex. Suscipit, eum, sapiente aspernatur nam hic repudiandae pariatur nihil saepe
+                        molestias odio voluptas, quod accusamus.</p>
+                    <h3>Sarah </h3>
+                    <span>artist,travel enthusiast</span>
+                </div>
+
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti maiores quis delectus
+                        omnis nesciunt sunt assumenda odit adipisci quo! Ullam error totam reprehenderit repudiandae
+                        harum. Unde, ex. Suscipit, eum, sapiente aspernatur nam hic repudiandae pariatur nihil saepe
+                        molestias odio voluptas, quod accusamus.</p>
+                    <h3>Sheldon </h3>
+                    <span>business manager</span>
+                </div>
+
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti maiores quis delectus
+                        omnis nesciunt sunt assumenda odit adipisci quo! Ullam error totam reprehenderit repudiandae
+                        harum. Unde, ex. Suscipit, eum, sapiente aspernatur nam hic repudiandae pariatur nihil saepe
+                        molestias odio voluptas, quod accusamus.</p>
+                    <h3>Cristina </h3>
+                    <span>Doctor</span>
+                </div>
+
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti maiores quis delectus
+                        omnis nesciunt sunt assumenda odit adipisci quo! Ullam error totam reprehenderit repudiandae
+                        harum. Unde, ex. Suscipit, eum, sapiente aspernatur nam hic repudiandae pariatur nihil saepe
+                        molestias odio voluptas, quod accusamus.</p>
+                    <h3>Melissa</h3>
+                    <span>student</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>quick links</h3>
+                <a href="./home.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="./about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="./package.html"><i class="fas fa-angle-right"></i>Packages</a>
+                <a href="book.html"><i class="fas fa-angle-right"></i>Book your tickets!</a>
+            </div>
+            <div class="footer-box">
+                <h3>extra links</h3>
+                <a href="./home.html"><i class="fas fa-angle-right"></i>Ask anything</a>
+                <a href="#"><i class="fas fa-angle-right"></i>About us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact us</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i>+111-222-3344</a>
+                <a href="#"><i class="fas fa-phone"></i>+191-333-6789</a>
+                <a href="#"><i class="fas fa-envelope"></i>travelory@gmail.com</a>
+            </div>
+            <div class="footer-box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i>Travelory_123</a>
+                <a href="#"><i class="fab fa-instagram"></i>travelory_travels</a>
+                <a href="#"><i class="fab fa-twitter"></i>Travelory_tweets</a>
+            </div>
+        </div>
+        <div class="credit"> <span>created by travelory agency | &copy; all rights reserved</span></div>
+    </section>
+    <script src="./js/script.js"></script>
+    <!-- swiper js file link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+</html>
